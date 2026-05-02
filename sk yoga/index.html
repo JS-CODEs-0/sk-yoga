@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK Yoga Classes | Jodhpur</title>
+    <meta name="description" content="Join Kamlesh Sir for traditional yoga classes in Jodhpur. Authentic Indian tradition for all ages. Hatha, Vinyasa, Pranayama, and Meditation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:ital,wght@0,400;0,600;1,400&family=Jost:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="video" href="natraj_desktop.mp4" media="(min-width: 768px)">
+    <link rel="preload" as="video" href="natraj_mobile.mp4" media="(max-width: 767px)">
+</head>
+<body>
+
+    <!-- Section 0: Intro Video Overlay -->
+    <div id="video-overlay" class="video-overlay">
+        <!-- Desktop 16:9 Video -->
+        <video id="desktop-video" class="desktop-only" autoplay muted playsinline>
+            <source src="natraj_desktop.mp4" type="video/mp4">
+        </video>
+        <!-- Mobile 9:16 Video -->
+        <video id="mobile-video" class="mobile-only" autoplay muted playsinline>
+            <source src="natraj_mobile.mp4" type="video/mp4">
+        </video>
+        <button id="skip-btn" class="skip-btn">Skip &rsaquo;</button>
+    </div>
+
+    <!-- Section 1: Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="logo">SK Yoga Classes</div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="floating-wa" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.031 0C5.4 0 .025 5.378.025 12.012c0 2.118.55 4.186 1.595 6.009L0 24l6.126-1.606c1.782.95 3.791 1.453 5.898 1.453h.005c6.629 0 12.004-5.379 12.004-12.013C24.033 5.378 18.66 0 12.031 0zm0 21.849h-.004c-1.788 0-3.541-.48-5.077-1.39l-.364-.216-3.774.989.999-3.681-.237-.377a10.02 10.02 0 01-1.543-5.328C2.03 5.485 7.4 1.115 12.031 1.115c4.633 0 10.003 4.37 10.003 10.005 0 5.632-5.37 10.729-10.003 10.729zm5.482-7.51c-.302-.15-1.782-.879-2.062-.979-.279-.1-.483-.15-.684.15-.202.302-.784.979-.96 1.18-.178.2-.355.225-.657.075-.302-.15-1.272-.468-2.42-1.49-.894-.796-1.498-1.78-1.674-2.08-.178-.3-.02-.465.13-.615.137-.137.302-.35.454-.525.15-.175.202-.3.302-.5.1-.2.05-.375-.025-.525-.075-.15-.684-1.65-.935-2.26-.245-.595-.494-.515-.684-.525-.178-.01-.383-.01-.584-.01-.2 0-.528.075-.805.375-.279.3-1.056 1.03-1.056 2.51s1.08 2.91 1.232 3.11c.15.2 2.118 3.23 5.127 4.53.715.31 1.274.495 1.708.635.719.23 1.373.195 1.888.12.576-.085 1.782-.73 2.034-1.435.252-.705.252-1.31.178-1.435-.075-.125-.279-.2-.581-.35z"/>
+        </svg>
+    </a>
+
+    <!-- Section 2: Hero -->
+    <section id="home" class="hero section-padding">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="label animate-element">SK Yoga Classes &middot; Jodhpur</span>
+                <h1 class="animate-element">Find Your Stillness.</h1>
+                <p class="subheading animate-element">Motion to Meditation</p>
+                <p class="body-text animate-element">Join Kamlesh Sir for traditional yoga classes in Jodhpur. All ages. All levels. All welcome.</p>
+                <a href="#classes" class="btn animate-element">Join a Class &rarr;</a>
+            </div>
+            <div class="hero-image">
+                <img src="img1.png" alt="Yoga practice at SK Yoga Classes" loading="eager" class="animate-element">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Value Strip -->
+    <section class="value-strip">
+        <div class="value-container">
+            <div class="value-item">
+                <div class="icon animate-scale">
+                    <!-- Simple Lotus SVG -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c0 0-4 6-4 10s4 10 4 10 4-6 4-10-4-10-4-10z"/><path d="M12 22s-8-4-8-10 6-6 6-6"/><path d="M12 22s8-4 8-10-6-6-6-6"/></svg>
+                </div>
+                <h3>All Ages Welcome</h3>
+                <p>Families & beginners to advanced</p>
+            </div>
+            <div class="divider"></div>
+            <div class="value-item">
+                <div class="icon animate-scale">
+                    <!-- Om Symbol Alternative: A nice traditional pattern or simple sun -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </div>
+                <h3>Authentic Tradition</h3>
+                <p>Rooted in classical Indian yoga</p>
+            </div>
+            <div class="divider"></div>
+            <div class="value-item">
+                <div class="icon animate-scale">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <h3>Jodhpur's Trusted Studio</h3>
+                <p>Guided by Kamlesh Sir</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: About -->
+    <section id="about" class="about section-padding">
+        <div class="about-container">
+            <div class="about-text">
+                <span class="label animate-element">About Kamlesh Sir</span>
+                <h2 class="animate-element">Motion to Meditation.</h2>
+                <div class="gold-rule animate-element"></div>
+                <p class="animate-element">Kamlesh Sir has been guiding students through the ancient practice of yoga for over 20 years in the heart of Jodhpur, Rajasthan.</p>
+                <p class="animate-element">His teaching is rooted in classical Indian tradition — Hatha, Vinyasa, Pranayama, and deep Meditation — offered with warmth, patience, and devotion to every student who walks through the door.</p>
+                <p class="animate-element">Whether you are 8 or 80, a complete beginner or an experienced practitioner, SK Yoga Classes is your sanctuary.</p>
+                <blockquote class="animate-element">Yoga is not what you do — it is what you become.</blockquote>
+            </div>
+            <div class="about-image">
+                <img src="img2.png" alt="Kamlesh Sir teaching yoga" loading="lazy" class="animate-element">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Classes -->
+    <section id="classes" class="classes section-padding">
+        <div class="classes-container">
+            <h2 class="section-title animate-element">Explore Our Practices</h2>
+            <p class="section-sub animate-element">Traditional yoga for every body, every age.</p>
+            
+            <div class="bento-grid">
+                <!-- Large card -->
+                <div class="bento-card large-card animate-card">
+                    <div class="bento-placeholder"><span>Hatha Yoga</span></div>
+                    <div class="bento-content">
+                        <h3>Hatha Yoga</h3>
+                        <p>The foundation. Balance, strength, and breath for all ages.</p>
+                        <div class="tags">
+                            <span class="tag">All Levels</span>
+                            <span class="tag">Beginner</span>
+                        </div>
+                        <a href="https://wa.me/91XXXXXXXXXX" class="enquire-link" target="_blank">Enquire &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bento-card animate-card">
+                    <div class="bento-placeholder"><span>Vinyasa Flow</span></div>
+                    <div class="bento-content">
+                        <h3>Vinyasa Flow</h3>
+                        <p>Dynamic movement linked with breath. Energising and fluid.</p>
+                        <div class="tags">
+                            <span class="tag">All Levels</span>
+                            <span class="tag">Advanced</span>
+                        </div>
+                        <a href="https://wa.me/91XXXXXXXXXX" class="enquire-link" target="_blank">Enquire &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bento-card animate-card">
+                    <div class="bento-placeholder"><span>Pranayama</span></div>
+                    <div class="bento-content">
+                        <h3>Pranayama</h3>
+                        <p>The art of breath. Calm the mind, energise the body.</p>
+                        <div class="tags">
+                            <span class="tag">All Levels</span>
+                        </div>
+                        <a href="https://wa.me/91XXXXXXXXXX" class="enquire-link" target="_blank">Enquire &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bento-card animate-card">
+                    <div class="bento-placeholder"><span>Meditation</span></div>
+                    <div class="bento-content">
+                        <h3>Meditation</h3>
+                        <p>Deep stillness. Guided sessions for inner peace and clarity.</p>
+                        <div class="tags">
+                            <span class="tag">All Levels</span>
+                        </div>
+                        <a href="https://wa.me/91XXXXXXXXXX" class="enquire-link" target="_blank">Enquire &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bento-card animate-card">
+                    <div class="bento-placeholder"><span>Family Yoga</span></div>
+                    <div class="bento-content">
+                        <h3>Family Yoga</h3>
+                        <p>Practice together. Classes designed for families of all ages.</p>
+                        <div class="tags">
+                            <span class="tag">All Levels</span>
+                            <span class="tag">Families</span>
+                        </div>
+                        <a href="https://wa.me/91XXXXXXXXXX" class="enquire-link" target="_blank">Enquire &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Why Choose Us -->
+    <section class="why-us section-padding">
+        <div class="why-container">
+            <h2 class="animate-element">Why SK Yoga Classes</h2>
+            <div class="why-grid">
+                <div class="why-card animate-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 6 .5-4.5 4 1.5 6-6-3.5-6 3.5 1.5-6-4.5-4 6-.5 3-6z"/></svg>
+                    </div>
+                    <h3>Expert Guidance</h3>
+                    <p>Over 20 years of classical yoga teaching experience.</p>
+                </div>
+                <div class="why-card animate-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>All Ages & Families</h3>
+                    <p>From children to seniors, everyone is welcome.</p>
+                </div>
+                <div class="why-card animate-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h3>Authentic Indian Tradition</h3>
+                    <p>Classical Hatha, Pranayama, and Vedic practices.</p>
+                </div>
+                <div class="why-card animate-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Heart of Jodhpur</h3>
+                    <p>Your trusted local studio in the Blue City.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Pricing -->
+    <section id="pricing" class="pricing section-padding">
+        <div class="pricing-container">
+            <h2 class="animate-element">Membership Plans</h2>
+            <p class="section-sub animate-element">Flexible memberships for individuals and families.</p>
+
+            <div class="pricing-grid">
+                <div class="price-card animate-card">
+                    <h3>Monthly</h3>
+                    <p class="price-text">Contact for pricing</p>
+                    <div class="price-divider"></div>
+                    <ul class="features">
+                        <li>Unlimited classes per month</li>
+                        <li>All class styles included</li>
+                        <li>Family discount available</li>
+                        <li>Personal guidance from Kamlesh Sir</li>
+                    </ul>
+                    <a href="https://wa.me/91XXXXXXXXXX" class="price-btn" target="_blank">Enquire on WhatsApp &rarr;</a>
+                </div>
+
+                <div class="price-card featured animate-card">
+                    <span class="badge">Most Popular</span>
+                    <h3>Quarterly</h3>
+                    <p class="price-text">Contact for pricing</p>
+                    <div class="price-divider"></div>
+                    <ul class="features">
+                        <li>Unlimited classes per month</li>
+                        <li>All class styles included</li>
+                        <li>Family discount available</li>
+                        <li>Personal guidance from Kamlesh Sir</li>
+                    </ul>
+                    <a href="https://wa.me/91XXXXXXXXXX" class="price-btn" target="_blank">Enquire on WhatsApp &rarr;</a>
+                </div>
+
+                <div class="price-card animate-card">
+                    <h3>Annual</h3>
+                    <p class="price-text">Contact for pricing</p>
+                    <div class="price-divider"></div>
+                    <ul class="features">
+                        <li>Unlimited classes per month</li>
+                        <li>All class styles included</li>
+                        <li>Family discount available</li>
+                        <li>Personal guidance from Kamlesh Sir</li>
+                    </ul>
+                    <a href="https://wa.me/91XXXXXXXXXX" class="price-btn" target="_blank">Enquire on WhatsApp &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Gallery -->
+    <section id="gallery" class="gallery section-padding">
+        <div class="gallery-container">
+            <h2 class="animate-element">Life at SK Yoga</h2>
+            <p class="section-sub animate-element">Moments from our studio in Jodhpur.</p>
+
+            <div class="masonry-grid">
+                <div class="masonry-item animate-card" style="height: 200px;">
+                    <div class="gallery-placeholder">Yoga class photo</div>
+                    <div class="overlay"><span>View +</span></div>
+                </div>
+                <div class="masonry-item animate-card" style="height: 260px;">
+                    <div class="gallery-placeholder">Yoga class photo</div>
+                    <div class="overlay"><span>View +</span></div>
+                </div>
+                <div class="masonry-item animate-card" style="height: 180px;">
+                    <div class="gallery-placeholder">Yoga class photo</div>
+                    <div class="overlay"><span>View +</span></div>
+                </div>
+                <div class="masonry-item animate-card" style="height: 300px;">
+                    <div class="gallery-placeholder">Yoga class photo</div>
+                    <div class="overlay"><span>View +</span></div>
+                </div>
+                <div class="masonry-item animate-card" style="height: 220px;">
+                    <div class="gallery-placeholder">Yoga class photo</div>
+                    <div class="overlay"><span>View +</span></div>
+                </div>
+                <div class="masonry-item animate-card" style="height: 240px;">
+                    <div class="gallery-placeholder">Yoga class photo</div>
+                    <div class="overlay"><span>View +</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox for Gallery -->
+    <div id="lightbox" class="lightbox">
+        <button id="lightbox-close" class="lightbox-close">&times;</button>
+        <div class="lightbox-content">
+            <div class="lightbox-placeholder">Yoga class photo</div>
+        </div>
+    </div>
+
+    <!-- Section 9: Testimonials -->
+    <section class="testimonials section-padding">
+        <div class="test-container">
+            <h2 class="animate-element">What Our Students Say</h2>
+            
+            <div class="test-grid">
+                <div class="test-card animate-card">
+                    <div class="quote-mark">&ldquo;</div>
+                    <p class="quote-text">Kamlesh Sir's guidance has transformed not just my body but my entire outlook on life. Truly a sacred space.</p>
+                    <div class="test-divider"></div>
+                    <div class="author">
+                        <div class="avatar">SK</div>
+                        <div class="author-info">
+                            <span class="name">SK</span>
+                            <span class="title">Student &middot; SK Yoga Classes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-card animate-card">
+                    <div class="quote-mark">&ldquo;</div>
+                    <p class="quote-text">I started as a complete beginner. The patience and warmth here is unlike any studio I have visited.</p>
+                    <div class="test-divider"></div>
+                    <div class="author">
+                        <div class="avatar">RP</div>
+                        <div class="author-info">
+                            <span class="name">RP</span>
+                            <span class="title">Student &middot; SK Yoga Classes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-card animate-card">
+                    <div class="quote-mark">&ldquo;</div>
+                    <p class="quote-text">My whole family practices here now. The family classes are wonderful — my children love it.</p>
+                    <div class="test-divider"></div>
+                    <div class="author">
+                        <div class="avatar">AM</div>
+                        <div class="author-info">
+                            <span class="name">AM</span>
+                            <span class="title">Student &middot; SK Yoga Classes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 10: CTA Band -->
+    <section class="cta-band section-padding">
+        <div class="cta-container">
+            <h2 class="animate-element">Begin Your Journey.</h2>
+            <p class="animate-element">Join SK Yoga Classes in Jodhpur. All ages. All levels. All welcome.</p>
+            <a href="https://wa.me/91XXXXXXXXXX" class="cta-btn animate-element" target="_blank">Chat With Us on WhatsApp &rarr;</a>
+        </div>
+    </section>
+
+    <!-- Section 11: Contact & Footer -->
+    <section id="contact" class="contact section-padding">
+        <div class="contact-container">
+            <div class="contact-left animate-element">
+                <span class="label">Find Us</span>
+                <h2>Visit SK Yoga Classes</h2>
+                <div class="details">
+                    <p>📍 Jodhpur, Rajasthan</p>
+                    <p>📞 +91 XXXXXXXXXX</p>
+                    <p>⏰ Morning Batch: 6:00 AM &ndash; 8:00 AM</p>
+                    <p>⏰ Evening Batch: 5:30 PM &ndash; 7:30 PM</p>
+                </div>
+                <a href="https://wa.me/91XXXXXXXXXX" class="contact-btn" target="_blank">Message on WhatsApp &rarr;</a>
+                <div class="socials">
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-right animate-element">
+                <!-- Embedded Google Map for Jodhpur -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114400.12269225883!2d72.93721796781295!3d26.270119865610264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418c4eaa06fcb9%3A0x7d6a54f06554b426!2sJodhpur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">SK Yoga Classes &middot; Jodhpur, Rajasthan</div>
+            <div class="footer-right">&copy; 2025 SK Yoga Classes. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
