@@ -1,48 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Intro Video Overlay Logic
-    const videoOverlay = document.getElementById('video-overlay');
-    const desktopVideo = document.getElementById('desktop-video');
-    const mobileVideo = document.getElementById('mobile-video');
-    const skipBtn = document.getElementById('skip-btn');
     const body = document.body;
 
-    // Lock scroll initially
-    body.style.overflow = 'hidden';
-
-    const hideOverlay = () => {
-        videoOverlay.style.opacity = '0';
-        setTimeout(() => {
-            videoOverlay.style.display = 'none';
-            body.style.overflow = '';
-            
-            // Trigger scroll observer once video overlay is gone
-            // so hero animations start playing
-            triggerHeroAnimations();
-        }, 1000); // Wait for transition
-    };
-
-    if (desktopVideo) desktopVideo.addEventListener('ended', hideOverlay);
-    if (mobileVideo) mobileVideo.addEventListener('ended', hideOverlay);
-    
-    if (skipBtn) {
-        skipBtn.addEventListener('click', () => {
-            videoOverlay.style.transition = 'none'; // Instant hide on skip
-            videoOverlay.style.display = 'none';
-            body.style.overflow = '';
-            triggerHeroAnimations();
-        });
-    }
-
-    // Fallback if video fails to load or play
-    setTimeout(() => {
-        if(videoOverlay.style.display !== 'none') {
-            const isDesktopVisible = window.innerWidth >= 768;
-            const activeVideo = isDesktopVisible ? desktopVideo : mobileVideo;
-            if (activeVideo && activeVideo.readyState === 0) {
-                hideOverlay();
-            }
-        }
-    }, 5000);
+    // Trigger hero animations immediately since intro video is removed
+    triggerHeroAnimations();
 
     // 2. Navbar Scroll Effect & Active Links
     const navbar = document.getElementById('navbar');
