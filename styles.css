@@ -1,9 +1,9 @@
 :root {
-    --charcoal: #1C1A17;
-    --charcoal2: #3D3530;
-    --gold: #C4956A;
-    --cream: #E8D5BC;
-    --linen: #F5F0E8;
+    --charcoal: #1A2420;
+    --charcoal2: #2D4A3E;
+    --gold: #5C8C72;
+    --cream: #B8D4C4;
+    --linen: #EEF5F1;
     
     --font-heading: 'Cinzel', serif;
     --font-body: 'Jost', sans-serif;
@@ -199,7 +199,6 @@ ul {
     height: 100vh;
     padding-top: 80px; /* nav height offset */
     display: flex;
-    background-image: url('background_1_desktop.png');
     background-size: cover;
     background-position: center;
 }
@@ -332,9 +331,6 @@ ul {
 
 /* About Section */
 .about {
-    background-image: url('background_2_desktop.png');
-    background-size: cover;
-    background-position: center;
 }
 
 .about-container {
@@ -438,7 +434,7 @@ ul {
 
 .bento-card {
     background-color: var(--charcoal2);
-    border: 1px solid rgba(196, 149, 106, 0.2);
+    border: 1px solid rgba(92, 140, 114, 0.2);
     border-radius: 4px;
     overflow: hidden;
     display: flex;
@@ -579,7 +575,7 @@ ul {
 
 .price-card {
     background-color: var(--charcoal2);
-    border: 1px solid rgba(196, 149, 106, 0.25);
+    border: 1px solid rgba(92, 140, 114, 0.25);
     border-radius: 4px;
     padding: 36px 28px;
     text-align: center;
@@ -623,7 +619,7 @@ ul {
 
 .price-divider {
     height: 1px;
-    background-color: rgba(196, 149, 106, 0.2);
+    background-color: rgba(92, 140, 114, 0.2);
     margin-bottom: 24px;
 }
 
@@ -797,7 +793,7 @@ ul {
 
 .test-card {
     background-color: var(--charcoal2);
-    border: 1px solid rgba(196, 149, 106, 0.2);
+    border: 1px solid rgba(92, 140, 114, 0.2);
     border-radius: 4px;
     padding: 32px 24px;
     position: relative;
@@ -824,7 +820,7 @@ ul {
 
 .test-divider {
     height: 1px;
-    background-color: rgba(196, 149, 106, 0.2);
+    background-color: rgba(92, 140, 114, 0.2);
     margin-bottom: 24px;
 }
 
@@ -984,13 +980,13 @@ ul {
 }
 
 .contact-right iframe {
-    border: 1px solid rgba(196, 149, 106, 0.25) !important;
+    border: 1px solid rgba(92, 140, 114, 0.25) !important;
     border-radius: 4px;
 }
 
 .footer {
     background-color: var(--charcoal);
-    border-top: 1px solid rgba(196, 149, 106, 0.15);
+    border-top: 1px solid rgba(92, 140, 114, 0.15);
     padding: 24px 5%;
 }
 
@@ -1145,7 +1141,6 @@ ul {
     .hero {
         height: auto;
         min-height: 100vh;
-        background-image: url('background_1_mobile.png');
     }
 
     .hero-content {
@@ -1174,7 +1169,6 @@ ul {
 
     /* About */
     .about {
-        background-image: url('background_2_mobile.png');
     }
 
     .about-container {
