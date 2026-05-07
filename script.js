@@ -124,12 +124,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const masonryItems = document.querySelectorAll('.masonry-item');
     const lightbox = document.getElementById('lightbox');
     const lightboxClose = document.getElementById('lightbox-close');
+    const lightboxImg = document.getElementById('lightbox-img');
 
-    if (masonryItems && lightbox) {
+    if (masonryItems && lightbox && lightboxImg) {
         masonryItems.forEach(item => {
             item.addEventListener('click', () => {
-                lightbox.classList.add('active');
-                body.style.overflow = 'hidden';
+                const img = item.querySelector('img');
+                if (img) {
+                    lightboxImg.src = img.src;
+                    lightbox.classList.add('active');
+                    body.style.overflow = 'hidden';
+                }
             });
         });
 

@@ -711,19 +711,17 @@ ul {
 }
 
 .lightbox-content {
-    width: 80%;
-    height: 80%;
-    background-color: var(--cream);
+    width: 90%;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
 }
 
-.lightbox-placeholder {
-    font-size: 16px;
-    color: var(--gold);
-    font-weight: 300;
+#lightbox-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 /* Testimonials */
