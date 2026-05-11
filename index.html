@@ -112,72 +112,186 @@
         <div class="classes-container">
             <h2 class="section-title animate-element">Explore Our Practices</h2>
             <p class="section-sub animate-element">Traditional yoga for every body, every age.</p>
-            
-            <div class="bento-grid">
-                <!-- Large card -->
-                <div class="bento-card large-card animate-card">
-                    <div class="bento-placeholder"><span>Hatha Yoga</span></div>
-                    <div class="bento-content">
-                        <h3>Hatha Yoga</h3>
-                        <p>The foundation. Balance, strength, and breath for all ages.</p>
-                        <div class="tags">
-                            <span class="tag">All Levels</span>
-                            <span class="tag">Beginner</span>
-                        </div>
-                        <a href="https://wa.me/919413501948?text=Hello%2C%20I%20am%20enquiring%20about%20yoga%20classes%20at%20S.K.%20Yoga%20Center%2C%20Jodhpur.%20Could%20you%20please%20share%20more%20details%3F" class="enquire-link" target="_blank">Enquire &rarr;</a>
-                    </div>
+
+            <style>
+                .classes-grid {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 20px;
+                    margin-top: 2.5rem;
+                }
+                @media (max-width: 768px) {
+                    .classes-grid { grid-template-columns: repeat(2, 1fr); }
+                }
+                @media (max-width: 480px) {
+                    .classes-grid { grid-template-columns: 1fr; }
+                }
+                .class-card {
+                    background: #2E4A38;
+                    border: 1px solid rgba(122,184,150,0.2);
+                    border-radius: 4px;
+                    padding: 24px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    transition: border-color 0.3s ease, transform 0.3s ease;
+                }
+                .class-card:hover {
+                    border-color: #7AB896;
+                    transform: translateY(-3px);
+                }
+                .class-card .card-icon {
+                    width: 24px;
+                    height: 24px;
+                    color: #7AB896;
+                    flex-shrink: 0;
+                }
+                .class-card .card-name {
+                    font-family: 'Cinzel', serif;
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: #C8E6D4;
+                    margin: 0;
+                    line-height: 1.4;
+                }
+                .class-card .card-desc {
+                    font-family: 'Jost', sans-serif;
+                    font-weight: 300;
+                    font-size: 12px;
+                    color: #B8D4C4;
+                    line-height: 1.6;
+                    margin: 0;
+                    flex-grow: 1;
+                }
+                .class-card .card-enquire {
+                    font-family: 'Jost', sans-serif;
+                    font-size: 12px;
+                    color: #7AB896;
+                    letter-spacing: 1px;
+                    text-decoration: none;
+                    margin-top: auto;
+                    display: inline-block;
+                }
+                .class-card .card-enquire:hover { text-decoration: underline; }
+            </style>
+
+            <div class="classes-grid">
+
+                <div class="class-card animate-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2C9 5 7 8.5 7 12s2 7 5 10"/><path d="M12 2c3 3 5 6.5 5 10s-2 7-5 10"/><path d="M2 12c3-3 6.5-5 10-5s7 2 10 5"/><path d="M2 12c3 3 6.5 5 10 5s7-2 10-5"/></svg>
+                    <p class="card-name">Basic Yoga</p>
+                    <p class="card-desc">The perfect start. Foundational poses and breathing for absolute beginners.</p>
+                    <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
                 </div>
 
-                <div class="bento-card animate-card">
-                    <div class="bento-placeholder"><span>Vinyasa Flow</span></div>
-                    <div class="bento-content">
-                        <h3>Vinyasa Flow</h3>
-                        <p>Dynamic movement linked with breath. Energising and fluid.</p>
-                        <div class="tags">
-                            <span class="tag">All Levels</span>
-                            <span class="tag">Advanced</span>
-                        </div>
-                        <a href="https://wa.me/919413501948?text=Hello%2C%20I%20am%20enquiring%20about%20yoga%20classes%20at%20S.K.%20Yoga%20Center%2C%20Jodhpur.%20Could%20you%20please%20share%20more%20details%3F" class="enquire-link" target="_blank">Enquire &rarr;</a>
-                    </div>
+                <div class="class-card animate-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2C9 5 7 8.5 7 12s2 7 5 10"/><path d="M12 2c3 3 5 6.5 5 10s-2 7-5 10"/><path d="M2 12c3-3 6.5-5 10-5s7 2 10 5"/><path d="M2 12c3 3 6.5 5 10 5s7-2 10-5"/></svg>
+                    <p class="card-name">Fitness &amp; Weight Loss Yoga</p>
+                    <p class="card-desc">Dynamic yoga sequences designed to burn calories, tone the body, and boost energy.</p>
+                    <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
                 </div>
 
-                <div class="bento-card animate-card">
-                    <div class="bento-placeholder"><span>Pranayama</span></div>
-                    <div class="bento-content">
-                        <h3>Pranayama</h3>
-                        <p>The art of breath. Calm the mind, energise the body.</p>
-                        <div class="tags">
-                            <span class="tag">All Levels</span>
-                        </div>
-                        <a href="https://wa.me/919413501948?text=Hello%2C%20I%20am%20enquiring%20about%20yoga%20classes%20at%20S.K.%20Yoga%20Center%2C%20Jodhpur.%20Could%20you%20please%20share%20more%20details%3F" class="enquire-link" target="_blank">Enquire &rarr;</a>
-                    </div>
+                <div class="class-card animate-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2C9 5 7 8.5 7 12s2 7 5 10"/><path d="M12 2c3 3 5 6.5 5 10s-2 7-5 10"/><path d="M2 12c3-3 6.5-5 10-5s7 2 10 5"/><path d="M2 12c3 3 6.5 5 10 5s7-2 10-5"/></svg>
+                    <p class="card-name">Advance Yoga</p>
+                    <p class="card-desc">Challenging postures and deep practices for experienced yoga students.</p>
+                    <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
                 </div>
 
-                <div class="bento-card animate-card">
-                    <div class="bento-placeholder"><span>Meditation</span></div>
-                    <div class="bento-content">
-                        <h3>Meditation</h3>
-                        <p>Deep stillness. Guided sessions for inner peace and clarity.</p>
-                        <div class="tags">
-                            <span class="tag">All Levels</span>
-                        </div>
-                        <a href="https://wa.me/919413501948?text=Hello%2C%20I%20am%20enquiring%20about%20yoga%20classes%20at%20S.K.%20Yoga%20Center%2C%20Jodhpur.%20Could%20you%20please%20share%20more%20details%3F" class="enquire-link" target="_blank">Enquire &rarr;</a>
-                    </div>
+                <div class="class-card animate-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2C9 5 7 8.5 7 12s2 7 5 10"/><path d="M12 2c3 3 5 6.5 5 10s-2 7-5 10"/><path d="M2 12c3-3 6.5-5 10-5s7 2 10 5"/><path d="M2 12c3 3 6.5 5 10 5s7-2 10-5"/></svg>
+                    <p class="card-name">Therapy Yoga</p>
+                    <p class="card-desc">Healing through yoga. Targeted practices for pain relief and recovery.</p>
+                    <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
                 </div>
 
-                <div class="bento-card animate-card">
-                    <div class="bento-placeholder"><span>Family Yoga</span></div>
-                    <div class="bento-content">
-                        <h3>Family Yoga</h3>
-                        <p>Practice together. Classes designed for families of all ages.</p>
-                        <div class="tags">
-                            <span class="tag">All Levels</span>
-                        </div>
-                        <a href="https://wa.me/919413501948?text=Hello%2C%20I%20am%20enquiring%20about%20yoga%20classes%20at%20S.K.%20Yoga%20Center%2C%20Jodhpur.%20Could%20you%20please%20share%20more%20details%3F" class="enquire-link" target="_blank">Enquire &rarr;</a>
-                    </div>
+                <div class="class-card animate-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2C9 5 7 8.5 7 12s2 7 5 10"/><path d="M12 2c3 3 5 6.5 5 10s-2 7-5 10"/><path d="M2 12c3-3 6.5-5 10-5s7 2 10 5"/><path d="M2 12c3 3 6.5 5 10 5s7-2 10-5"/></svg>
+                    <p class="card-name">Yoga Teacher's Training Course</p>
+                    <p class="card-desc">Become a certified yoga teacher. Comprehensive training rooted in tradition.</p>
+                    <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
                 </div>
+
+                <div class="class-card animate-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2C9 5 7 8.5 7 12s2 7 5 10"/><path d="M12 2c3 3 5 6.5 5 10s-2 7-5 10"/><path d="M2 12c3-3 6.5-5 10-5s7 2 10 5"/><path d="M2 12c3 3 6.5 5 10 5s7-2 10-5"/></svg>
+                    <p class="card-name">Hatha Yoga</p>
+                    <p class="card-desc">The foundation of all yoga. Balance, strength, and breath for every body.</p>
+                    <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
+                </div>
+
+                <div class="class-card animate-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2C9 5 7 8.5 7 12s2 7 5 10"/><path d="M12 2c3 3 5 6.5 5 10s-2 7-5 10"/><path d="M2 12c3-3 6.5-5 10-5s7 2 10 5"/><path d="M2 12c3 3 6.5 5 10 5s7-2 10-5"/></svg>
+                    <p class="card-name">Ashtanga Yoga</p>
+                    <p class="card-desc">A rigorous, structured sequence of postures building strength and discipline.</p>
+                    <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
+                </div>
+
+                <div class="class-card animate-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2C9 5 7 8.5 7 12s2 7 5 10"/><path d="M12 2c3 3 5 6.5 5 10s-2 7-5 10"/><path d="M2 12c3-3 6.5-5 10-5s7 2 10 5"/><path d="M2 12c3 3 6.5 5 10 5s7-2 10-5"/></svg>
+                    <p class="card-name">Vinyasa Yoga (Flow)</p>
+                    <p class="card-desc">Fluid movement linked with breath. Energising, dynamic, and meditative.</p>
+                    <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
+                </div>
+
+                <div class="class-card animate-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2C9 5 7 8.5 7 12s2 7 5 10"/><path d="M12 2c3 3 5 6.5 5 10s-2 7-5 10"/><path d="M2 12c3-3 6.5-5 10-5s7 2 10 5"/><path d="M2 12c3 3 6.5 5 10 5s7-2 10-5"/></svg>
+                    <p class="card-name">Iyengar Yoga</p>
+                    <p class="card-desc">Precision and alignment. Perfect postures with props for all levels.</p>
+                    <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
+                </div>
+
+                <div class="class-card animate-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2C9 5 7 8.5 7 12s2 7 5 10"/><path d="M12 2c3 3 5 6.5 5 10s-2 7-5 10"/><path d="M2 12c3-3 6.5-5 10-5s7 2 10 5"/><path d="M2 12c3 3 6.5 5 10 5s7-2 10-5"/></svg>
+                    <p class="card-name">Power Yoga</p>
+                    <p class="card-desc">High-intensity yoga to build strength, endurance, and mental toughness.</p>
+                    <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
+                </div>
+
+                <div class="class-card animate-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2C9 5 7 8.5 7 12s2 7 5 10"/><path d="M12 2c3 3 5 6.5 5 10s-2 7-5 10"/><path d="M2 12c3-3 6.5-5 10-5s7 2 10 5"/><path d="M2 12c3 3 6.5 5 10 5s7-2 10-5"/></svg>
+                    <p class="card-name">Pregnancy Yoga</p>
+                    <p class="card-desc">Safe, gentle yoga for expecting mothers to ease discomfort and prepare for birth.</p>
+                    <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
+                </div>
+
+                <div class="class-card animate-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2C9 5 7 8.5 7 12s2 7 5 10"/><path d="M12 2c3 3 5 6.5 5 10s-2 7-5 10"/><path d="M2 12c3-3 6.5-5 10-5s7 2 10 5"/><path d="M2 12c3 3 6.5 5 10 5s7-2 10-5"/></svg>
+                    <p class="card-name">Acro Yoga</p>
+                    <p class="card-desc">A joyful blend of yoga, acrobatics, and trust — practised with a partner.</p>
+                    <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
+                </div>
+
+                <div class="class-card animate-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2C9 5 7 8.5 7 12s2 7 5 10"/><path d="M12 2c3 3 5 6.5 5 10s-2 7-5 10"/><path d="M2 12c3-3 6.5-5 10-5s7 2 10 5"/><path d="M2 12c3 3 6.5 5 10 5s7-2 10-5"/></svg>
+                    <p class="card-name">Corporate Yoga</p>
+                    <p class="card-desc">Bring wellness to the workplace. Stress relief and focus for teams.</p>
+                    <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
+                </div>
+
+                <div class="class-card animate-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2C9 5 7 8.5 7 12s2 7 5 10"/><path d="M12 2c3 3 5 6.5 5 10s-2 7-5 10"/><path d="M2 12c3-3 6.5-5 10-5s7 2 10 5"/><path d="M2 12c3 3 6.5 5 10 5s7-2 10-5"/></svg>
+                    <p class="card-name">Kids Yoga</p>
+                    <p class="card-desc">Fun, playful yoga for children that builds strength, focus, and confidence.</p>
+                    <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
+                </div>
+
+                <div class="class-card animate-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2C9 5 7 8.5 7 12s2 7 5 10"/><path d="M12 2c3 3 5 6.5 5 10s-2 7-5 10"/><path d="M2 12c3-3 6.5-5 10-5s7 2 10 5"/><path d="M2 12c3 3 6.5 5 10 5s7-2 10-5"/></svg>
+                    <p class="card-name">Guided Meditation &amp; Pranayama</p>
+                    <p class="card-desc">Ancient breathing and meditation techniques for deep inner calm.</p>
+                    <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
+                </div>
+
+                <div class="class-card animate-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2C9 5 7 8.5 7 12s2 7 5 10"/><path d="M12 2c3 3 5 6.5 5 10s-2 7-5 10"/><path d="M2 12c3-3 6.5-5 10-5s7 2 10 5"/><path d="M2 12c3 3 6.5 5 10 5s7-2 10-5"/></svg>
+                    <p class="card-name">Yoga for Sports</p>
+                    <p class="card-desc">Performance-enhancing yoga for athletes. Flexibility, recovery, and mental edge.</p>
+                    <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
+                </div>
+
             </div>
-            <p style="font-family: 'Jost', sans-serif; font-weight: 300; font-style: italic; text-align: center; color: #7AB896; margin-top: 2rem;">Also teaching at Center Academy School and Jai Narayan University, Jodhpur.</p>
+
+            <p style="font-family: 'Jost', sans-serif; font-weight: 300; font-style: italic; text-align: center; color: #7AB896; margin-top: 40px;">Also teaching at Center Academy School and Jai Narayan University, Jodhpur.</p>
         </div>
     </section>
 
@@ -297,27 +411,27 @@
 
             <div class="masonry-grid">
                 <div class="masonry-item animate-card" style="height: 200px;">
-                    <img src="Screenshot 2026-03-14 153500.png" alt="Yoga class photo" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="yoga pics (1).jpeg" alt="Yoga class at S.K. Yoga Center" style="width: 100%; height: 100%; object-fit: cover;">
                     <div class="overlay"><span>View +</span></div>
                 </div>
                 <div class="masonry-item animate-card" style="height: 260px;">
-                    <div class="gallery-placeholder">Yoga class photo</div>
+                    <img src="yoga pics (2).jpeg" alt="Yoga class at S.K. Yoga Center" style="width: 100%; height: 100%; object-fit: cover;">
                     <div class="overlay"><span>View +</span></div>
                 </div>
                 <div class="masonry-item animate-card" style="height: 180px;">
-                    <div class="gallery-placeholder">Yoga class photo</div>
+                    <img src="yoga pics (3).jpeg" alt="Yoga class at S.K. Yoga Center" style="width: 100%; height: 100%; object-fit: cover;">
                     <div class="overlay"><span>View +</span></div>
                 </div>
                 <div class="masonry-item animate-card" style="height: 300px;">
-                    <div class="gallery-placeholder">Yoga class photo</div>
+                    <img src="yoga pics (4).jpeg" alt="Yoga class at S.K. Yoga Center" style="width: 100%; height: 100%; object-fit: cover;">
                     <div class="overlay"><span>View +</span></div>
                 </div>
                 <div class="masonry-item animate-card" style="height: 220px;">
-                    <div class="gallery-placeholder">Yoga class photo</div>
+                    <img src="yoga pics (5).jpeg" alt="Yoga class at S.K. Yoga Center" style="width: 100%; height: 100%; object-fit: cover;">
                     <div class="overlay"><span>View +</span></div>
                 </div>
                 <div class="masonry-item animate-card" style="height: 240px;">
-                    <div class="gallery-placeholder">Yoga class photo</div>
+                    <img src="yoga pics (6).jpeg" alt="Yoga class at S.K. Yoga Center" style="width: 100%; height: 100%; object-fit: cover;">
                     <div class="overlay"><span>View +</span></div>
                 </div>
             </div>
@@ -340,39 +454,39 @@
             <div class="test-grid">
                 <div class="test-card animate-card">
                     <div class="quote-mark">&ldquo;</div>
-                    <p class="quote-text">Kamlesh Sir's guidance has transformed not just my body but my entire outlook on life. Truly a sacred space.</p>
+                    <p class="quote-text">Practising under Kamlesh Sir for 10 years has been the greatest gift I have given myself. His teaching is patient, deep, and truly transformative.</p>
                     <div class="test-divider"></div>
                     <div class="author">
-                        <div class="avatar">SK</div>
+                        <div class="avatar">RR</div>
                         <div class="author-info">
-                            <span class="name">SK</span>
-                            <span class="title">Student &middot; S.K. Yoga Center</span>
+                            <span class="name">Rekha Rathi</span>
+                            <span class="title">Student for 10 Years &middot; Age 45</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="test-card animate-card">
                     <div class="quote-mark">&ldquo;</div>
-                    <p class="quote-text">I started as a complete beginner. The patience and warmth here is unlike any studio I have visited.</p>
+                    <p class="quote-text">S.K. Yoga Center gave me the discipline and foundation to become a National Gold Medallist. Kamlesh Sir's guidance is unmatched.</p>
                     <div class="test-divider"></div>
                     <div class="author">
-                        <div class="avatar">RP</div>
+                        <div class="avatar">PM</div>
                         <div class="author-info">
-                            <span class="name">RP</span>
-                            <span class="title">Student &middot; S.K. Yoga Center</span>
+                            <span class="name">Pawan Mutha</span>
+                            <span class="title">Student for 7 Years &middot; Yoga National Gold Medallist &middot; Age 23</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="test-card animate-card">
                     <div class="quote-mark">&ldquo;</div>
-                    <p class="quote-text">My whole family practices here now. The family classes are wonderful — my children love it.</p>
+                    <p class="quote-text">A decade of yoga with Kamlesh Sir has kept my body strong and my mind at peace. This studio is a sanctuary unlike any other in Jodhpur.</p>
                     <div class="test-divider"></div>
                     <div class="author">
-                        <div class="avatar">AM</div>
+                        <div class="avatar">RM</div>
                         <div class="author-info">
-                            <span class="name">AM</span>
-                            <span class="title">Student &middot; S.K. Yoga Center</span>
+                            <span class="name">Rajesh Mundra</span>
+                            <span class="title">Student for 10 Years &middot; Age 45</span>
                         </div>
                     </div>
                 </div>
@@ -406,12 +520,6 @@
                 <div class="socials">
                     <a href="https://www.instagram.com/sk_yoga_center" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                    </a>
-                    <a href="https://www.facebook.com/search/top?q=Kamlesh+Yogi" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                    </a>
-                    <a href="https://www.youtube.com/results?search_query=Kamlesh+Perjapati" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
                     </a>
                 </div>
             </div>

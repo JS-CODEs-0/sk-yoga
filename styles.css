@@ -917,16 +917,26 @@ ul {
 
 .socials {
     display: flex;
-    gap: 20px;
+    gap: 24px;
+    margin-top: 8px;
 }
 
 .socials a {
     color: var(--gold);
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials a:hover {
+    transform: scale(1.2);
+    color: #E1306C; /* Instagram brand color for more noticeability on hover */
 }
 
 .socials svg {
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
 }
 
 .contact-right {
