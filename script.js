@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const index = cards.indexOf(entry.target);
                     setTimeout(() => {
                         entry.target.classList.add('in-view');
-                    }, index * 100);
+                    }, index * 60);
                 } 
                 // Images
                 else if (entry.target.tagName.toLowerCase() === 'img') {
