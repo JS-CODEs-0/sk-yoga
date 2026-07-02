@@ -27,6 +27,7 @@
             <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
                 <li><a href="#classes">Classes</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#gallery">Gallery</a></li>
@@ -107,6 +108,82 @@
         </div>
     </section>
 
+    <!-- Section 4.5: Meet Our Team -->
+    <section id="team" class="team-section section-padding">
+        <div class="team-container">
+            <span class="label animate-element">OUR INSTRUCTORS</span>
+            <h2 class="animate-element">Meet the Team.</h2>
+            <div class="gold-rule animate-element"></div>
+
+            <div class="team-grid">
+
+                <!-- Kamlesh Prajapat -->
+                <div class="team-card animate-card">
+                    <div class="team-photo-wrap">
+                        <img src="kamlesh sir pic.jpeg" alt="Kamlesh Prajapat" class="team-photo">
+                    </div>
+                    <h3 class="team-name">Kamlesh Prajapat</h3>
+                    <p class="team-role">Director, S.K. Yoga Center</p>
+                    <div class="team-divider"></div>
+                    <ul class="team-credentials">
+                        <li>Diploma in Yoga &middot; M.A. in Yoga</li>
+                        <li>NET in Yoga &middot; 500-Hour Yoga Alliance</li>
+                        <li>Pranayama &amp; YTTC Specialist</li>
+                    </ul>
+                    <div class="team-exp-badge">18 Years Experience</div>
+                </div>
+
+                <!-- Nishant Chouhan -->
+                <div class="team-card animate-card">
+                    <div class="team-photo-wrap">
+                        <img src="staff-nishant.jpeg" alt="Nishant Chouhan" class="team-photo">
+                    </div>
+                    <h3 class="team-name">Nishant Chouhan</h3>
+                    <p class="team-role">Managing Director, S.K. Yoga Center</p>
+                    <div class="team-divider"></div>
+                    <ul class="team-credentials">
+                        <li>IYO &ndash; International Yoga Organization</li>
+                        <li>Ashtanga &amp; Hatha Yoga Specialist</li>
+                    </ul>
+                    <div class="team-exp-badge">5 Years Experience</div>
+                </div>
+
+                <!-- Gautam Sharma -->
+                <div class="team-card animate-card">
+                    <div class="team-photo-wrap">
+                        <img src="staff-gautam.png" alt="Gautam Sharma" class="team-photo">
+                    </div>
+                    <h3 class="team-name">Gautam Sharma</h3>
+                    <p class="team-role">Yoga Teacher, S.K. Yoga Center</p>
+                    <div class="team-divider"></div>
+                    <ul class="team-credentials">
+                        <li>Diploma in Yoga &middot; 300-Hour Hatha YTTC</li>
+                        <li>Dhyan &amp; Weight Loss Specialist</li>
+                    </ul>
+                    <div class="team-exp-badge">14 Years Experience</div>
+                </div>
+
+                <!-- Yashwant Gori -->
+                <div class="team-card animate-card">
+                    <div class="team-photo-wrap">
+                        <img src="yashwant.jpeg" alt="Yashwant Gori" class="team-photo">
+                    </div>
+                    <h3 class="team-name">Yashwant Gori</h3>
+                    <p class="team-role">Yoga Therapist, S.K. Yoga Center</p>
+                    <div class="team-divider"></div>
+                    <ul class="team-credentials">
+                        <li>T.T.C. from Yogapeace Jaipur</li>
+                        <li>1000-Hour Therapy Yoga Certification</li>
+                        <li>Yoga Alliance Certified</li>
+                        <li>Meditation &amp; Relaxation Specialist</li>
+                    </ul>
+                    <div class="team-exp-badge">3 Years Experience</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Section 5: Classes -->
     <section id="classes" class="classes section-padding">
         <div class="classes-container">
@@ -122,6 +199,10 @@
                 }
                 @media (max-width: 768px) {
                     .classes-grid { grid-template-columns: repeat(2, 1fr); }
+                    /* Hide cards after the 4th on mobile by default */
+                    .classes-grid:not(.show-all) .class-card:nth-child(n+5) {
+                        display: none !important;
+                    }
                 }
                 @media (max-width: 480px) {
                     .classes-grid { grid-template-columns: 1fr; }
@@ -173,6 +254,40 @@
                     display: inline-block;
                 }
                 .class-card .card-enquire:hover { text-decoration: underline; }
+
+                /* View More Button Styles */
+                .view-more-container {
+                    display: none;
+                    justify-content: center;
+                    margin-top: 32px;
+                }
+                .view-more-btn {
+                    background: transparent;
+                    color: #7AB896;
+                    border: 1px solid rgba(122, 184, 150, 0.4);
+                    border-radius: 4px;
+                    padding: 12px 28px;
+                    font-family: 'Cinzel', serif;
+                    font-weight: 600;
+                    font-size: 13px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    outline: none;
+                }
+                .view-more-btn:hover {
+                    background: #7AB896;
+                    color: #1A2420;
+                    border-color: #7AB896;
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 12px rgba(122, 184, 150, 0.15);
+                }
+                @media (max-width: 768px) {
+                    .view-more-container {
+                        display: flex;
+                    }
+                }
             </style>
 
             <div class="classes-grid">
@@ -289,6 +404,10 @@
                     <a class="card-enquire" href="https://wa.me/919413501948" target="_blank" rel="noopener noreferrer">Enquire &rarr;</a>
                 </div>
 
+            </div>
+
+            <div class="view-more-container">
+                <button id="view-more-classes-btn" class="view-more-btn">View More Practices</button>
             </div>
 
             <p style="font-family: 'Jost', sans-serif; font-weight: 300; font-style: italic; text-align: center; color: #7AB896; margin-top: 40px;">Also teaching at Center Academy School and Jai Narayan University, Jodhpur.</p>
@@ -529,6 +648,20 @@
             </div>
         </div>
     </section>
+
+    <!-- Google Reviews Badge -->
+    <div class="google-reviews-badge">
+        <a href="https://www.google.com/maps/place/Shree+Krishna+yoga+Sansthan+S.K.Yoga/@26.2973261,73.0396531,17z/data=!4m18!1m9!3m8!1s0x39418d0713c7aa57:0x929ec516a56a22e0!2sShree+Krishna+yoga+Sansthan+S.K.Yoga!8m2!3d26.2973261!4d73.042228!9m1!1b1!16s%2Fg%2F11fx7stmyd!3m7!1s0x39418d0713c7aa57:0x929ec516a56a22e0!8m2!3d26.2973261!4d73.042228!9m1!1b1!16s%2Fg%2F11fx7stmyd?authuser=0&entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="reviews-link">
+            <div class="stars">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+            <p class="review-text">Loving your experience? Rate us on Google Reviews!</p>
+        </a>
+    </div>
 
     <footer class="footer">
         <div class="footer-container">

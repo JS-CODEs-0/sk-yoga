@@ -151,4 +151,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // 6. View More Practices Toggle
+    const viewMoreBtn = document.getElementById('view-more-classes-btn');
+    const classesGrid = document.querySelector('.classes-grid');
+
+    if (viewMoreBtn && classesGrid) {
+        viewMoreBtn.addEventListener('click', () => {
+            const isExpanded = classesGrid.classList.toggle('show-all');
+            viewMoreBtn.textContent = isExpanded ? 'View Less Practices' : 'View More Practices';
+            
+            // If shrinking back, scroll to the top of the classes section smoothly
+            if (!isExpanded) {
+                const classesSection = document.getElementById('classes');
+                if (classesSection) {
+                    classesSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    }
 });
